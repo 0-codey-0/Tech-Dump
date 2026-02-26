@@ -3,31 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tech-Dump|Cart</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- link to the CSS file -->
 </head>
 <body>
     <nav>
-  <h1>Tech-Dump</h1>
+  <h1><a href="index.html" class="logo">Tech-Dump</a></h1>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="cart.html">Cart</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
+    <li><a href="products.html">Products</a></li> <!-- Link to the products page -->
+    <li><a href="cart.html">Cart</a></li> <!-- Link to the shopping cart page -->
+    <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
   </ul>
 </nav>
 <table>
   <tr>
+    <th>Image</th>
     <th>Product</th>
     <th>Price</th>
   </tr>
+
   <tr>
-    <td>Laptop</td>
-    <td>$800</td>
+    <td>
+      <img src="css/images/gaming laptop.avif" 
+           alt="Gaming Laptop" 
+           class="cart-img">
+    </td>
+    <td>Gaming Laptop</td>
+    <td>£800</td>
+  </tr>
+
+  <!-- Checkout row INSIDE table -->
+  <tr>
+    <td colspan="3" style="text-align: right;">
+      <button class="btn">Checkout</button>
+    </td>
   </tr>
 </table>
 
-<p><strong>Total: $800</strong></p>
-<button class="btn">Checkout</button>
 
 </body>
 </html>
